@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radiações Alfa, Beta e Gama</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="hero">
+    <div class="atom">☢</div>
+    <p class="tag">FÍSICA • RADIOATIVIDADE</p>
+    <h1>Radiações <span>Alfa</span>, <b>Beta</b> e <i>Gama</i></h1>
+    <p class="intro">Descubra como as radiações nucleares se comportam, qual é o seu poder de penetração e como podemos nos proteger.</p>
+    <a href="#explorar" class="btn">Explorar o tema ↓</a>
+  </div>
+</header>
+
+<main id="explorar">
+<section class="cards">
+  <article class="card alpha">
+    <div class="symbol">α</div><h2>Alfa</h2>
+    <p>É formada por 2 prótons e 2 nêutrons. Possui carga +2.</p>
+    <div class="mini">Penetração: <strong>baixa</strong></div>
+  </article>
+  <article class="card beta">
+    <div class="symbol">β</div><h2>Beta</h2>
+    <p>É formada por partículas emitidas pelo núcleo, como elétrons. Possui carga -1 na emissão β⁻.</p>
+    <div class="mini">Penetração: <strong>média</strong></div>
+  </article>
+  <article class="card gamma">
+    <div class="symbol">γ</div><h2>Gama</h2>
+    <p>É uma radiação eletromagnética de alta energia, sem massa e sem carga.</p>
+    <div class="mini">Penetração: <strong>alta</strong></div>
+  </article>
+</section>
+
+<section class="panel">
+  <h2>🛡️ Simulador de penetração</h2>
+  <p>Escolha uma radiação e veja até onde ela consegue atravessar diferentes barreiras.</p>
+  <div class="controls">
+    <button class="ray active" data-ray="alpha">α Alfa</button>
+    <button class="ray" data-ray="beta">β Beta</button>
+    <button class="ray" data-ray="gamma">γ Gama</button>
+  </div>
+  <div class="simulation">
+    <div class="source">☢</div>
+    <div class="beam" id="beam"></div>
+    <div class="barrier paper"><span>Papel</span></div>
+    <div class="barrier metal"><span>Metal</span></div>
+    <div class="barrier lead"><span>Chumbo</span></div>
+    <div class="target">●</div>
+  </div>
+  <p id="simText" class="result">A radiação alfa é barrada por uma folha de papel ou pela camada externa da pele.</p>
+</section>
+
+<section class="panel comparison">
+  <h2>📊 Compare as três</h2>
+  <table>
+    <tr><th>Característica</th><th>α Alfa</th><th>β Beta</th><th>γ Gama</th></tr>
+    <tr><td>Natureza</td><td>Partículas</td><td>Partículas</td><td>Eletromagnética</td></tr>
+    <tr><td>Carga</td><td>+2</td><td>-1 (β⁻)</td><td>0</td></tr>
+    <tr><td>Massa</td><td>Alta</td><td>Baixa</td><td>0</td></tr>
+    <tr><td>Penetração</td><td>Baixa</td><td>Média</td><td>Alta</td></tr>
+    <tr><td>Blindagem típica</td><td>Papel</td><td>Alumínio</td><td>Chumbo/concreto</td></tr>
+  </table>
+</section>
+
+<section class="panel quiz">
+  <h2>🧠 Quiz rápido</h2>
+  <p id="question">Qual radiação tem maior poder de penetração?</p>
+  <div class="answers">
+    <button data-answer="alpha">Alfa</button>
+    <button data-answer="beta">Beta</button>
+    <button data-answer="gamma">Gama</button>
+  </div>
+  <p id="feedback"></p>
+  <button id="next" class="btn hidden">Próxima questão</button>
+</section>
+
+<section class="fact">
+  <h2>💡 Você sabia?</h2>
+  <p>A radioatividade pode ocorrer naturalmente. Alguns núcleos atômicos instáveis se transformam espontaneamente, emitindo radiação para alcançar um estado mais estável.</p>
+</section>
+</main>
+
+<footer>
+  <p>⚛️ Projeto de Física — Radiações Alfa, Beta e Gama</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
